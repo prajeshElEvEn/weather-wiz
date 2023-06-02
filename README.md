@@ -2,6 +2,8 @@
 
 WeatherWiz is a command-line tool that allows you to retrieve the weather forecast for a specific city using the OpenWeather API.
 
+![WeatherWiz](./assets/images/weather-wiz.png?raw=true, "WeatherWiz")
+
 ## Installation
 
 - Fork and clone this [repository](https://github.com/prajeshElEvEn/weather-wiz)
