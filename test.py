@@ -19,8 +19,8 @@ def get_weather(city):
         print(colored(f"Error: {data['message']}", "red"))
         return
 
-    # Extract relevant weather information
     weather = data["weather"][0]["description"]
+    weather = weather.capitalize()
     temperature = data["main"]["temp"]
     humidity = data["main"]["humidity"]
     wind_speed = data["wind"]["speed"]
@@ -56,9 +56,21 @@ def get_weather(city):
 
 
 def main():
-    city = input("Enter the city name: ")
-    print("\nFetching weather information...\n")
+    print(colored("-----------------------------------------------------------", "green"))
+    print(colored("WeatherWiz - Weather Forecast Python CLI Tool", "blue"))
+    print(colored("-----------------------------------------------------------", "green"))
+    print("")
+    city = input(
+        colored("Enter a city name(such as: New Delhi, New York)\n> ", "magenta"))
+    city = city.capitalize()
+    print("")
+    print(colored(f"Retrieving weather information for {city}...", "yellow"))
+    print("")
     get_weather(city)
+    print("")
+    print(colored("-----------------------------------------------------------", "green"))
+    print(colored("Thank you for using WeatherWiz!", "blue"))
+    print(colored("-----------------------------------------------------------", "green"))
 
 
 if __name__ == "__main__":
