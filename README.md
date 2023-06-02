@@ -34,6 +34,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+- Create a file `.env` in the root directory and add the following environment variables
+
+```bash
+OPEN_WEATHER_API_KEY=<your_api_key>
+```
+
 ## Usage
 
 - Run the following command to get the weather forecast for a specific city
@@ -45,7 +51,8 @@ python3 script.py
 - Enter the city name when prompted
 
 ```bash
-Enter the city name: <city_name>
+Enter the city name:
+> <city_name>
 ```
 
 ## Authors
