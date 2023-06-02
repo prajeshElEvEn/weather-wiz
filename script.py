@@ -1,4 +1,7 @@
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
 def get_weather(city, api_key):
@@ -12,6 +15,7 @@ def get_weather(city, api_key):
     try:
         response = requests.get(base_url, params=params)
         data = response.json()
+        print(data)
 
         if data["cod"] == "404":
             print("City not found.")
@@ -33,7 +37,8 @@ def get_weather(city, api_key):
 
 def main():
     city = input("Enter the city name: ")
-    api_key = "YOUR_OPENWEATHER_API_KEY"
+    api_key = os.environ.get("OPEN_WEATHER_API_KEY")
+    # api_key = '45b11607ce8aa9c3a54c0a355e420441'
 
     get_weather(city, api_key)
 
