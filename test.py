@@ -2,7 +2,6 @@ import requests
 import os
 from tabulate import tabulate
 from termcolor import colored
-from pyfiglet import Figlet
 from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
@@ -34,12 +33,6 @@ def get_weather(city):
     lat = data["coord"]["lat"]
     lon = data["coord"]["lon"]
 
-    # Generate ASCII art for weather symbol
-    weather_symbol = data["weather"][0]["icon"]
-    figlet = Figlet(font="slant")
-    ascii_art = figlet.renderText(weather_symbol)
-
-    # Display weather information in a table
     table = [
         [colored("City", "green"), colored(city, "cyan")],
         [colored("Weather", "green"), colored(weather, "cyan")],
@@ -56,10 +49,9 @@ def get_weather(city):
         [colored("Latitude", "green"), colored(f"{lat}°", "cyan")],
         [colored("Longitude", "green"), colored(f"{lon}°", "cyan")],
     ]
-    headers = ["", ""]
-    table_str = tabulate(table, headers, tablefmt="fancy_grid")
 
-    print(ascii_art)
+    table_str = tabulate(table, tablefmt="fancy_grid")
+
     print(table_str)
 
 
