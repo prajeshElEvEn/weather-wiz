@@ -1,5 +1,6 @@
 import requests
 import os
+from pyfiglet import Figlet
 from tabulate import tabulate
 from termcolor import colored
 from datetime import datetime
@@ -56,9 +57,13 @@ def get_weather(city):
 
 
 def main():
-    print(colored("-----------------------------------------------------------", "green"))
-    print(colored("WeatherWiz - Weather Forecast Python CLI Tool", "blue"))
-    print(colored("-----------------------------------------------------------", "green"))
+    print(colored("--------------------------------------------------------------------------", "green"))
+    fg = Figlet(font='slant')
+    ascii_art = fg.renderText('WeatherWiz')
+    print(colored(ascii_art, "blue"))
+    print(colored(
+        "WeatherWiz - Weather Forecast Python CLI Tool | Press Ctrl+C to exit", "blue"))
+    print(colored("--------------------------------------------------------------------------", "green"))
     print("")
     city = input(
         colored("Enter a city name(such as: New Delhi, New York)\n> ", "magenta"))
@@ -68,9 +73,9 @@ def main():
     print("")
     get_weather(city)
     print("")
-    print(colored("-----------------------------------------------------------", "green"))
-    print(colored("Thank you for using WeatherWiz!", "blue"))
-    print(colored("-----------------------------------------------------------", "green"))
+    print(colored("--------------------------------------------------------------------------", "green"))
+    print(colored("Thank you for using WeatherWiz | Sleepy Coders", "blue"))
+    print(colored("--------------------------------------------------------------------------", "green"))
 
 
 if __name__ == "__main__":
