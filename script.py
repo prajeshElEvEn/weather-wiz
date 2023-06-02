@@ -38,7 +38,6 @@ def get_weather(city, api_key):
 def main():
     city = input("Enter the city name: ")
     api_key = os.environ.get("OPEN_WEATHER_API_KEY")
-    # api_key = '45b11607ce8aa9c3a54c0a355e420441'
 
     get_weather(city, api_key)
 
