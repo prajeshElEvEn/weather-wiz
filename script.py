@@ -13,6 +13,7 @@ API_URL = "https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_k
 
 def get_weather(city):
     url = API_URL.format(city=city, api_key=API_KEY)
+
     response = requests.get(url)
     data = response.json()
 

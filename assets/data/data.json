@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": 77.7,
+    "lat": 28.9833
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 25.02,
+    "feels_like": 26.03,
+    "temp_min": 25.02,
+    "temp_max": 25.02,
+    "pressure": 1002,
+    "humidity": 94,
+    "sea_level": 1002,
+    "grnd_level": 977
+  },
+  "visibility": 6092,
+  "wind": {
+    "speed": 3.41,
+    "deg": 112,
+    "gust": 7.19
+  },
+  "clouds": {
+    "all": 100
+  },
+  "dt": 1688927771,
+  "sys": {
+    "country": "IN",
+    "sunrise": 1688947051,
+    "sunset": 1688997061
+  },
+  "timezone": 19800,
+  "id": 1263214,
+  "name": "Meerut",
+  "cod": 200
+}
