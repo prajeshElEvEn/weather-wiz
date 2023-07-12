@@ -8,11 +8,7 @@ LONG_DESCRIPTION = 'A package that allows you to get weather information from th
 setup(
     name="weather-wiz",
     version=VERSION,
-    authors=[
-        "Pranjal Agarawal",
-        "Prajesh Pratap Singh",
-
-    ],
+    author="Pranjal Agarawal",
     author_email="prajesh.eleven118@gamil.com",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
