@@ -57,7 +57,7 @@ def get_weather(city):
     print(table_str)
 
 
-def main():
+def weather_wiz():
     print(colored("--------------------------------------------------------------------------", "green"))
     fg = Figlet(font='slant')
     ascii_art = fg.renderText('WeatherWiz')
@@ -77,7 +77,3 @@ def main():
     print(colored("--------------------------------------------------------------------------", "green"))
     print(colored("Thank you for using WeatherWiz | Sleepy Coders", "blue"))
     print(colored("--------------------------------------------------------------------------", "green"))
-
-
-if __name__ == "__main__":
-    main()
