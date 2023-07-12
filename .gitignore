@@ -2,3 +2,6 @@
 venv
 # .env
 weather-wiz/__pycache__
+build
+dist
+weather_wiz.egg-info
