@@ -1,1 +1,1 @@
-from weather_wiz import weather_wiz
+from weather_wiz import weatherWiz

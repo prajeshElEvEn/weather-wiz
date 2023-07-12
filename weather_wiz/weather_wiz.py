@@ -57,7 +57,7 @@ def get_weather(city):
     print(table_str)
 
 
-def weather_wiz():
+def weatherWiz():
     print(colored("--------------------------------------------------------------------------", "green"))
     fg = Figlet(font='slant')
     ascii_art = fg.renderText('WeatherWiz')
