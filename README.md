@@ -1,10 +1,18 @@
 # WeatherWiz
 
-WeatherWiz is a command-line tool that allows you to retrieve the weather forecast for a specific city using the OpenWeather API.
+WeatherWiz is a command-line tool that allows you to retrieve the weather forecast for a specific city using the OpenWeather API. This package can be found on [PyPI](https://pypi.org/project/weather-wiz/).
 
 ![WeatherWiz](/assets/images/weather-wiz.png?raw=true, "WeatherWiz")
 
 ## Installation
+
+- Install the package using pip
+
+```bash
+pip install weather-wiz
+```
+
+## Contributing
 
 - Fork and clone this [repository](https://github.com/prajeshElEvEn/weather-wiz)
 
@@ -44,10 +52,16 @@ OPEN_WEATHER_API_KEY=<your_api_key>
 
 ## Usage
 
+- Navigate to the project directory
+
+```bash
+cd weather-wiz
+```
+
 - Run the following command to get the weather forecast for a specific city
 
 ```bash
-python3 script.py
+python3 __init__.py
 ```
 
 - Enter the city name when prompted
@@ -56,6 +70,8 @@ python3 script.py
 Enter the city name:
 > <city_name>
 ```
+
+> Want to create your own Python Package and publish it on PyPI? [Watch this](https://youtu.be/tEFkHEKypLI)
 
 ## Authors
 
