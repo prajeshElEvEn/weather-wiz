@@ -7,7 +7,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
 
-API_KEY = os.environ.get("OPEN_WEATHER_API_KEY")
+API_KEY = "45b11607ce8aa9c3a54c0a355e420441"
 API_URL = "https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 
 
