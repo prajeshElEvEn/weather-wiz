@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.8'
+VERSION = '0.0.1'
 DESCRIPTION = 'Get weather information from the command line'
 LONG_DESCRIPTION = 'A package that allows you to get weather information from the command line using the OpenWeatherMap API.'
 
@@ -8,7 +8,7 @@ LONG_DESCRIPTION = 'A package that allows you to get weather information from th
 setup(
     name="weather_wiz",
     version=VERSION,
-    author="Pranjal Agarawal",
+    author="Pranjal Agarwal",
     author_email="prajesh.eleven118@gamil.com",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
